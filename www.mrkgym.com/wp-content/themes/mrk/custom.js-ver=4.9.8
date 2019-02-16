@@ -1,0 +1,194 @@
+function fixnav() {
+    "use strict";
+    jQuery(window).bind("scroll", function () {
+        if (jQuery(this).scrollTop() > 120 && ww > 900) {
+            nav.addClass("f-nav")
+        } else {
+            nav.removeClass("f-nav")
+        }
+    })
+}
+
+var ww = document.body.clientWidth;
+jQuery(window).load(function () {
+    "use strict";
+    jQuery("body").find(".nav-container").css("pointer-events", "auto")
+});
+
+jQuery(document).ready(function () {
+    "use strict";
+    jQuery("body").find(".nav li a").each(function () {
+        if (jQuery(this).next().length > 0) {
+            jQuery(this).addClass("parent")
+        }
+    });
+    jQuery("body").find(".toggleMenu").click(function (e) {
+        e.preventDefault();
+        jQuery(this).toggleClass("active");
+        jQuery("body").find(".nav").toggle()
+    });
+    adjustMenu()
+});
+
+jQuery(window).bind("resize orientationchange", function () {
+    "use strict";
+    ww = document.body.clientWidth;
+    adjustMenu()
+});
+
+var adjustMenu = function () {
+        "use strict";
+        if (ww <= 900) {
+            jQuery("body").find(".toggleMenu").css("display", "inline-block");
+            if (!jQuery("body").find(".toggleMenu").hasClass("active")) {
+                jQuery("body").find(".nav").hide()
+            } else {
+                jQuery("body").find(".nav").show()
+            }
+            jQuery("body").find(".nav li").unbind("mouseenter mouseleave");
+            jQuery("body").find(".nav li a.parent").unbind("click").bind("click", function (e) {
+                e.preventDefault();
+                jQuery(this).parent("li").toggleClass("hover")
+            })
+        } else if (ww > 900) {
+            jQuery("body").find(".toggleMenu").css("display", "none");
+            jQuery("body").find(".nav").show();
+            jQuery("body").find(".nav li").removeClass("hover");
+            jQuery("body").find(".nav li a").unbind("click");
+            jQuery("body").find(".nav li").unbind("mouseenter mouseleave").bind("mouseenter mouseleave", function () {
+                jQuery(this).toggleClass("hover");
+                jQuery(this).toggleClass("activelink");
+                jQuery(this).find("ul").toggleClass("animatedfast");
+                jQuery(this).find("ul").toggleClass("fadeInDown")
+            });
+            jQuery("body").find(".nav ul li").unbind("mouseenter mouseleave").bind("mouseenter mouseleave", function () {
+                jQuery(this).toggleClass("hover");
+                jQuery(this).find("ul li").toggleClass("animatedfast");
+                jQuery(this).find("ul li").toggleClass("fadeInLeft")
+            })
+        }
+    };
+
+jQuery(document).ready(function () {
+    "use strict";
+    fixnav()
+});
+
+var nav = jQuery("body").find(".nav-container");
+
+jQuery(document).ready(function () {
+    "use strict";
+    var e = 220;
+    var t = 500;
+    if (ww >= 1200) {
+        jQuery(window).scroll(function () {
+            if (jQuery(this).scrollTop() > e) {
+                jQuery(".back-to-top").fadeIn(t)
+            } else {
+                jQuery(".back-to-top").fadeOut(t)
+            }
+        })
+    }
+    var scroll_height = jQuery(".header-bar").outerHeight();
+    
+    if (ww >= 900) {
+        jQuery(window).scroll(function () {
+             if (jQuery(this).scrollTop() > scroll_height) {
+                jQuery("header .header-menu-container").addClass('fix-header');
+                jQuery("#site-container").animate({scrollTop: scroll_height}, 500);
+            } else {
+                jQuery("header .header-menu-container").removeClass('fix-header');
+                jQuery("#site-container").animate({scrollTop: scroll_height}, 500);
+            }
+        })
+    }
+    jQuery(".back-to-top").click(function (e) {
+        e.preventDefault();
+        jQuery("html, body").animate({
+            scrollTop: 0
+        }, t);
+        return false
+    })
+});
+
+jQuery("body").find(".icon-container a").hover(function () {
+    "use strict";
+    jQuery(this).addClass("animated pulse")
+}, function () {
+    "use strict";
+    jQuery(this).removeClass("animated pulse")
+});
+
+jQuery("a").on("dragstart", function (e) {
+    "use strict";
+    e.preventDefault()
+});
+
+jQuery(document).ready(function () {
+    "use strict";
+    jQuery(".owl-prev:empty").parent().hide()
+});
+
+jQuery("body").find(".vet-message-close").on("click", function () {
+    "use strict";
+    jQuery(this).parent().fadeOut()
+});
+
+jQuery(window).load(function () {
+    "use strict";
+    jQuery(".blogimage").each(function () {
+        if (jQuery(this).attr("data-image")) {
+            jQuery(this).backstretch(jQuery(this).data("image"))
+        }
+    })
+});
+
+jQuery(window).load(function () {
+    "use strict";
+    jQuery(".galleryimage").each(function () {
+        if (jQuery(this).attr("data-image")) {
+            jQuery(this).backstretch(jQuery(this).data("image"))
+        }
+    })
+})
+
+jQuery(document).ready(function () {
+    "use strict";
+    jQuery('.accordion-header').toggleClass('inactive-header');
+    jQuery('.accordion-header').click(function () {
+        if (jQuery(this).is('.inactive-header')) {
+            jQuery('.active-header').toggleClass('active-header').toggleClass('inactive-header').next().slideToggle().toggleClass('open-content');
+            jQuery(this).toggleClass('active-header').toggleClass('inactive-header');
+            jQuery(this).next().slideToggle().toggleClass('open-content');
+        }
+        else {
+            jQuery(this).toggleClass('active-header').toggleClass('inactive-header');
+            jQuery(this).next().slideToggle().toggleClass('open-content');
+        }
+    });
+    return false;
+});
+
+
+jQuery(document).ready(function () {
+	jQuery(window).load(function() {
+	  // The slider being synced must be initialized first
+	  jQuery('#carousel').flexslider({
+	    animation: "slide",
+	    controlNav: false,
+	    animationLoop: false,
+	    slideshow: false,
+	    itemWidth: 85,
+	    itemMargin: 5,
+	    asNavFor: '#slider'
+	  });
+	 
+	  jQuery('#slider').flexslider({
+	    animation: "slide",
+	    controlNav: false,
+	    animationLoop: false,
+	    slideshow: false,
+	    sync: "#carousel"
+	  });
+	});
+});

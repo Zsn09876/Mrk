@@ -1,0 +1,1424 @@
+/*
+Theme Name: Mr.K
+Author: Mr.K
+Author URI:
+Description:
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http: //www.gnu.org/licenses/gpl-2.0.html
+*/
+
+/* ----------------------
+Stylesheet Guide
+-------------------------
+
+FONTS
+GENERAL STYLES
+GRID
+MAIN MENU
+TEXT ROTATOR
+PAGE STRUCTURE
+NEWS
+COMMENTS
+SIDEBAR
+FORMS
+FOOTER
+WIDGETS
+SOCIAL ICONS
+BACK TO TOP BUTTON
+WORDPRESS
+TRANSPARENT COLORS
+MEDIA
+
+*/
+
+/* ================= FONTS ================== */
+
+@font-face {
+    font-family: ralewaybold;
+    src: url("fonts/raleway-bold-webfont.eot")/*tpa=http://www.mrkgym.com/wp-content/themes/mrk/fonts/raleway-bold-webfont.eot*/;
+    src: url("fonts/raleway-bold-webfont.eot-#iefix")/*tpa=http://www.mrkgym.com/wp-content/themes/mrk/fonts/raleway-bold-webfont.eot?#iefix*/ format('embedded-opentype'),
+         url("fonts/raleway-bold-webfont.woff")/*tpa=http://www.mrkgym.com/wp-content/themes/mrk/fonts/raleway-bold-webfont.woff*/ format('woff'),
+         url("fonts/raleway-bold-webfont.ttf")/*tpa=http://www.mrkgym.com/wp-content/themes/mrk/fonts/raleway-bold-webfont.ttf*/ format('truetype'),
+         url("fonts/raleway-bold-webfont.svg#ralewaybold")/*tpa=http://www.mrkgym.com/wp-content/themes/mrk/fonts/raleway-bold-webfont.svg#ralewaybold*/ format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: ralewayregular;
+    src: url("fonts/raleway-regular-webfont.eot")/*tpa=http://www.mrkgym.com/wp-content/themes/mrk/fonts/raleway-regular-webfont.eot*/;
+    src: url("fonts/raleway-regular-webfont.eot-#iefix")/*tpa=http://www.mrkgym.com/wp-content/themes/mrk/fonts/raleway-regular-webfont.eot?#iefix*/ format('embedded-opentype'),
+         url("fonts/raleway-regular-webfont.woff")/*tpa=http://www.mrkgym.com/wp-content/themes/mrk/fonts/raleway-regular-webfont.woff*/ format('woff'),
+         url("fonts/raleway-regular-webfont.ttf")/*tpa=http://www.mrkgym.com/wp-content/themes/mrk/fonts/raleway-regular-webfont.ttf*/ format('truetype'),
+         url("fonts/raleway-regular-webfont.svg#ralewayregular")/*tpa=http://www.mrkgym.com/wp-content/themes/mrk/fonts/raleway-regular-webfont.svg#ralewayregular*/ format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+.slidetext,.button,.testimonial-name,.readmore-button,.resp-tabs-list li,.ns_nerveSlider .ns_slideContent div span,.slidetext{
+    font-weight: normal;
+}
+body,p,.nav-buttons span,.nav,.testimonial-name span {
+    font-weight: normal;
+}
+/* ================= GENERAL STYLES ================== */
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+body {
+    -webkit-overflow-scrolling: touch;
+}
+h1,h2,h3,h4,h5,h6 {
+    margin-bottom: 30px;
+    margin-top: 0px;
+    line-height: 1.333;
+}
+.show {
+    display: block !important;
+}
+.hide {
+    display: none !important;
+}
+.clear {
+    clear: both;
+}
+.clr {
+    clear: both;
+}
+p {
+    line-height: 1.5;
+    margin-bottom: 20px;
+    margin-top: 0px;
+    word-spacing: 0.2em;
+}
+p:last-child {
+    margin-bottom: 0px;
+}
+a {
+    -webkit-transition: color 0.2s ease-in-out;
+    -moz-transition: color 0.2s ease-in-out;
+    -o-transition: color 0.2s ease-in-out;
+    -ms-transition: color 0.2s ease-in-out;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: none;
+}
+strong {
+    letter-spacing: 0.01em;
+}
+hr {
+    height: 1px;
+    width: auto;
+    margin-right: 0px;
+    margin-left: 0px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    clear: both;
+    outline: none;
+    border: none;
+}
+dl {
+    line-height: 1.5;
+}
+select {
+    padding: 5px;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    font-size: 14px;
+    line-height: 2;
+    margin: 0 0 40px;
+    width: 100%;
+}
+.flex-img {
+    margin-bottom: 30px;
+}
+.flex-img img {
+    width: 100%;
+    height: auto;
+    vertical-align: bottom;
+}
+.grid img {
+    max-width: 100%;
+    height: auto;
+}
+blockquote {
+    margin: 30px 0px;
+    padding: 40px 40px 40px 100px;
+    position: relative;
+}
+blockquote:before {
+	width: 61px;
+	height: 100%;
+	position: absolute;
+	text-align: center;
+	top: 0px;
+	left: 0px;
+    margin: 0px;
+    z-index: 1;
+    content: '';
+}
+blockquote:after {
+	content: '"';
+	position: absolute;
+	font-size: 100px;
+    font-style: normal;
+	line-height: 1;
+	text-align: center;
+	top: 50%;
+	left: 17px;
+    margin: -20px 0px 0px 0px;
+    z-index: 2;
+}
+blockquote p {
+    display: inline;
+    margin: 0px;
+    line-height: 1.5;
+}
+blockquote cite {
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.5;
+    display: block;
+    margin-top: 15px;
+    text-align: right;
+}
+blockquote cite:before {
+    content: "— ";
+}
+blockquote,i,em {
+    font-style: italic;
+}
+label {
+    line-height: 1;
+    margin-bottom: 15px !important;
+    display: block;
+    font-weight: 700;
+    color: #333;
+}
+.label {
+    padding: 10px 15px 10px 15px;
+    display: inline-block;
+}
+.ext-link,
+.ext-link img {
+    display: block;
+    position: relative;
+    width: 100% !important;
+    height: auto !important;
+    border-radius: 0px !important;
+    overflow: hidden;
+    outline: 0 !important;
+    -webkit-backface-visibility: hidden;
+}
+.ext-link img {
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+.ext-link img:hover {
+    transform: scale(1.4) rotate(5deg);
+    -webkit-transform: scale(1.4) rotate(5deg);
+    -ms-transform: scale(1.4) rotate(5deg);
+}
+/* ================= GRID ================== */
+
+.grid,
+.unit {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.grid {
+    display: block;
+    clear: both;
+}
+.grid .unit {
+    float: left;
+    width: 100%;
+    padding: 20px;
+}
+.grid .unit:first-child {
+    padding-left: 20px;
+}
+.grid .unit:last-child {
+    padding-right: 20px;
+}
+.unit .unit:first-child {
+    padding-left: 0;
+}
+.unit .unit:last-child {
+    padding-right: 0;
+}
+.unit .grid:first-child > .unit {
+    padding-top: 0;
+}
+.unit .grid:last-child > .unit {
+    padding-bottom: 0;
+}
+.no-gutters .unit,
+.unit.no-gutters {
+    padding: 0 !important;
+}
+.wrap .grid,
+.grid.wrap {
+    max-width: 978px;
+    margin: 0 auto;
+}
+.grid .whole,
+.grid .w-1-1 {
+    width: 100%;
+}
+.grid .half,
+.grid .w-1-2 {
+    width: 50%;
+}
+.grid .one-third,
+.grid .w-1-3 {
+    width: 33.3332%;
+}
+.grid .two-thirds,
+.grid .w-2-3 {
+    width: 66.6665%;
+}
+.grid .one-quarter,
+.grid .w-1-4 {
+    width: 25%;
+}
+.grid .three-quarters,
+.grid .w-3-4 {
+    width: 75%;
+}
+.grid .one-fifth,
+.grid .w-1-5 {
+    width: 20%;
+}
+.grid .two-fifths,
+.grid .w-2-5 {
+    width: 40%;
+}
+.grid .three-fifths,
+.grid .w-3-5 {
+    width: 60%;
+}
+.grid .four-fifths,
+.grid .w-4-5 {
+    width: 80%;
+}
+.grid .golden-small,
+.grid .w-g-s {
+    width: 38.2716%;
+}
+.grid .golden-large,
+.grid .w-g-l {
+    width: 61.7283%;
+}
+.grid {
+    *zoom: 1;
+}
+.grid:before,
+.grid:after {
+    display: table;
+    content: "";
+    line-height: 0;
+}
+.grid:after {
+    clear: both;
+}
+
+/* ================= MAIN MENU  ================== */
+
+.logo {
+    float: left;
+}
+.logo h1{
+    margin: 0px !important;
+    padding: 0px !important;
+    line-height: 120px;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+.logo img {
+    max-height: 120px;
+    width: auto;
+    max-width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 40px;
+    -webkit-transition: all 0.2s ease-in-out;
+	-moz-transition: all 0.2s ease-in-out;
+	-o-transition: all 0.2s ease-in-out;
+	-ms-transition: all 0.2s ease-in-out;
+    vertical-align: bottom;
+    margin: 0px;
+    vertical-align: middle;
+}
+.logo a {
+    outline: none !important;
+}
+.nav-container {
+    z-index: 9999;
+    top: 0;
+    width: 100%;
+    pointer-events: none;
+    padding: 10px 0;
+}
+.nav-container-inner {
+    margin: 0px auto;
+    max-width: 1170px;
+    position: relative;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+}
+.toggleMenu {
+    display: none;
+    list-style: none;
+    padding: 15px 40px;
+    margin: 0px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 9;
+    font-weight: 700;
+    background-image: url("images/nav-toggle.png")/*tpa=http://www.mrkgym.com/wp-content/themes/mrk/images/nav-toggle.png*/;
+    background-repeat: no-repeat;
+    background-position: 95% 50%;
+    outline: none !important;
+}
+.toggleMenu:hover {
+    text-decoration: none;
+}
+#nav {
+    float: right;
+}
+.nav {
+    list-style: none;
+    *zoom: 1;
+    padding: 0px;
+    margin: 0;
+    z-index: 9999;
+    float: right;
+}
+.nav ul {
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+    z-index: 99999;
+    line-height: 40px;
+}
+.nav a {
+    padding: 5px 15px;
+    text-decoration: none;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    outline: none !important;
+}
+.nav ul li a {
+    padding: 5px 20px 5px 20px;
+}
+.nav li {
+    position: relative;
+}
+.nav > li {
+    float: left;
+}
+.nav > li > a {
+    display: block;
+    padding: 15px 10px;
+}
+.nav li ul {
+    position: absolute;
+    left: -9999px;
+}
+.nav > li.hover > ul {
+    left: 0;
+}
+.nav li li.hover ul {
+    left: 100%;
+    top: 0;
+    padding-top: 0px;
+}
+.nav li li a {
+    display: block;
+    position: relative;
+    z-index: 100;
+    border-bottom: none;
+}
+.nav li li li a {
+    z-index: 200;
+}
+.nav li li a:hover,
+.nav li li li a:hover {
+    border-bottom: none;
+}
+.f-nav > .nav-container-inner > .logo {
+    height: 70px;
+}
+.f-nav > .nav-container-inner > .logo h1{
+    line-height: 70px;
+}
+.f-nav > .nav-container-inner >.logo img {
+    max-height: 70px;
+}
+.f-nav {
+    opacity: 0.95;
+}
+.f-nav .nav {
+    /*line-height: 60px;*/
+}
+.f-nav .nav a {
+   padding-top: 15px;
+}
+.nav .iclflag {
+    margin-right: 10px !important;
+}
+/* ================= TEXT ROTATOR ================== */
+
+.morphext > span {
+	display: none;
+}
+
+.morphext > .animated {
+    display: inline-block;
+}
+/* ================= PAGE STRUCTURE ================== */
+
+#site-container {
+    position: relative;
+}
+.page-block {
+    width: 100%;
+    max-width: 1200px;
+    position: relative;
+    margin: 0px auto 0px auto;
+    overflow: hidden;
+    padding: 10px;
+}
+.page-block-large{
+    width: 100%;
+    max-width: 1600px;
+    position: relative;
+    margin: 0px auto 0px auto;
+    overflow: hidden;
+    padding: 10px;
+}
+.page-title {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    padding: 350px 0px 0px 0px;
+}
+.page-title.bg-hide {
+    padding: 0px !important;
+}
+.page-title-inner {
+    max-width: 100%;
+    width: 100%;
+    height: 100%;
+    margin: 0px auto;
+    text-align: center;
+}
+.page-title h1{
+    display: block;
+    z-index: 9;
+    padding: 40px;
+    margin: 0px;
+    -ms-word-wrap: break-word;
+    word-wrap: break-word;
+}
+.page-title h1::after{
+	width: 150px;
+	height: 3px;
+	display: block;
+	content:" ";
+	margin: 0 auto;
+	background: #37D49B;
+	margin-top: 20px;
+}
+.map-container {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    padding: 0px;
+    z-index: 1;
+}
+.map-title-inner {
+    max-width: 1200px;
+    width: 100%;
+    height: 100%;
+    margin: -120px auto 0px auto;
+    z-index: 1;
+}
+.map-container h1{
+    display: block;
+    z-index: 9;
+    padding: 40px;
+    margin: 0px;
+}
+/* ================= NEWS ================== */
+.blogcontainer {
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: inline-block;
+    margin: 0px 0px 40px 0px;
+    padding: 0;
+    vertical-align: bottom;
+}
+.blogcontainer:last-child {
+    margin-bottom: 0px;
+}
+.blogcontainer h4{
+    margin-bottom: 15px;
+}
+.blogcontainer p {
+    margin-bottom: 15px;
+}
+.blogcontainer p.postdate {
+    line-height: 1;
+    font-style: italic;
+    margin: 0px;
+}
+.blogcontainer .button{
+    margin: 0px;
+}
+.postcontent {
+    float: right;
+    width: 61.8%;
+    padding: 40px;
+    position: relative;
+}
+.postcontent p {
+    margin: 0px !important;
+}
+.postcontent.withoutfimage {
+    width: 100% !important;
+}
+.blogimage {
+    position: absolute;
+    left:0;
+    top:0;
+    width: 38.2%;
+    height: 100%;
+    vertical-align: bottom;
+}
+.blogimage a{
+    position: absolute;
+    left:0;
+    top:0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    -webkit-transition:opacity 0.4s ease-in-out;
+    -moz-transition:opacity 0.4s ease-in-out;
+    -o-transition:opacity 0.4s ease-in-out;
+    -ms-transition:opacity 0.4s ease-in-out;
+    transition:opacity 0.4s ease-in-out;
+    background-position:center center;
+    background-repeat:no-repeat;
+    background-image:url("images/link.png")/*tpa=http://www.mrkgym.com/wp-content/themes/mrk/images/link.png*/;
+    vertical-align: bottom;
+}
+.blogimage a:hover{
+    opacity: 0.9;
+}
+.blogpager {
+    width:100%;
+    position:relative;
+    display:inline-block;
+    vertical-align:bottom;
+    margin: 0px;
+}
+.blogpager .button {
+    margin: 0px !important;
+}
+.previous {
+    float:left;
+    width:50%;
+    padding:0px;
+}
+.next {
+    float:right;
+    width:50%;
+    text-align:right;
+    padding:0px;
+}
+.featured-image-date {
+    padding: 20px 40px;
+    margin-left: -20px;
+    margin-right: -20px;
+    margin-top: -20px;
+    margin-bottom: 20px;
+}
+.featured-image-date p {
+    padding-left: 35px;
+    background-image: url("images/date.png")/*tpa=http://www.mrkgym.com/wp-content/themes/mrk/images/date.png*/;
+    background-position: left center;
+    background-repeat: no-repeat;
+    margin: 0px;
+}
+.blogmetadata {
+    padding: 40px;
+    margin: 0px 0px 30px 0px;
+}
+.blogmetadata p {
+    margin-bottom: 0px;
+}
+.blogmetadata a:hover {
+    text-decoration: none;
+}
+/* ================= COMMENTS ================== */
+.comments_block {
+    margin-bottom: -30px;
+}
+.comments {
+    margin-top:30px;
+    margin-bottom:0px;
+}
+.comments p {
+    margin-bottom:40px !important;
+}
+.comments .meta {
+    margin-bottom:10px !important;
+    font-weight: 700;
+}
+.comments_content {
+    padding-top:10px;
+    position:relative;
+}
+.commentlist,
+.comments_block .children {
+    list-style: none !important;
+    padding: 0px !important;
+    margin: 0px;
+}
+.comments_block .children li {
+    background-image: url("images/reply.png")/*tpa=http://www.mrkgym.com/wp-content/themes/mrk/images/reply.png*/;
+    background-repeat: no-repeat;
+    background-position: left 10px;
+    padding-left: 60px;
+}
+.comments_block .children li ul li {
+    background-image: none;
+    padding-left: 0px;
+}
+.comments_block .fn {
+    font-style: normal;
+}
+.form-allowed-tags {
+    font-size: 11px;
+}
+/* ================= SIDEBAR ================== */
+.sidebar-box {
+    position: relative;
+    margin-bottom: 30px;
+}
+.sidebar-box:last-child {
+    margin-bottom: 0px;
+}
+.sidebar-list li a {
+    -webkit-transition: opacity 0.2s ease-in-out;
+    -moz-transition: opacity 0.2s ease-in-out;
+    -o-transition: opacity 0.2s ease-in-out;
+    -ms-transition: opacity 0.2s ease-in-out;
+}
+.sidebar-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    vertical-align: bottom;
+}
+.sidebar-list li {
+    padding-left: 0px;
+    padding-bottom: 12px;
+    margin-bottom: 12px;
+}
+.sidebar-list li:last-child {
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+    border-bottom: none;
+}
+.sidebar-list li a:hover {
+    text-decoration: none;
+}
+.sidebartabs .resp-tab-content {
+    padding: 20px;
+}
+.sidebartabs .resp-tabs-container img {
+    width:60px;
+    height: auto;
+    float: left;
+    margin-right: 20px;
+}
+.tab-posts {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+    display: inline-block;
+    width: 100%;
+}
+.tab-posts li{
+    margin: 0px 0px 20px 0px;
+    padding: 0px;
+    float: left;
+    width: 100%;
+}
+.tab-posts li:last-child{
+    margin: 0px;
+}
+.tab-posts li img{
+    -webkit-transition: opacity 0.2s ease-in-out;
+    -moz-transition: opacity 0.2s ease-in-out;
+    -o-transition: opacity 0.2s ease-in-out;
+    -ms-transition: opacity 0.2s ease-in-out;
+}
+.tab-posts li img:hover{
+    opacity: 0.7;
+}
+.tab-post-title{
+    margin-top: 5px;
+    display: inline-block;
+    font-weight: 700;
+    -ms-word-wrap: break-word;
+    word-wrap: break-word;
+}
+.tab-post-date {
+    margin-bottom: 0px;
+    margin-top: 10px;
+    font-size: 13px;
+}
+.max-600{
+    max-width: 600px;
+}
+/* ================= FORMS ================== */
+.form-box {
+    margin-top: 40px;
+}
+input,
+textarea {
+    width: 100%;
+    display: block;
+    margin: 0px 0px 40px 0px;
+    padding: 15px;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    -webkit-border-radius: 0px !important;
+    -moz-border-radius: 0px !important;
+    border-radius: 0px !important;
+    word-spacing: 0.1em;
+    letter-spacing: 0.01em;
+}
+input[type="checkbox"],input[type="radio"] {
+    width: auto;
+    margin: 5px 0px;
+    padding: 0px;
+}
+.comment-form input {
+    max-width: 640px;
+}
+input:focus,
+textarea:focus,
+select:focus{
+    outline: none !important;
+}
+input[type="submit"] {
+    margin-top: 15px;
+}
+textarea {
+    height: 100px;
+    margin-bottom: 25px !important;
+}
+.button,.next a,.previous a,input[type="submit"] {
+    width: auto;
+    cursor: pointer;
+    display: inline-block;
+    line-height: 1;
+    margin: 0px;
+    outline: none;
+    padding: 10px 20px 10px 20px;
+    position: relative;
+    text-align: center;
+    text-decoration: none !important;
+    -webkit-transition: background-color 0.2s ease-in-out;
+    -moz-transition: background-color 0.2s ease-in-out;
+    -o-transition: background-color 0.2s ease-in-out;
+    transition: background-color 0.2s ease-in-out;
+    border: none !important;
+    word-spacing: 0.1em;
+    letter-spacing: 0.01em;
+    border-radius: 40px;
+    font-size: 30px;
+    font-family: "OpenSans-Bold",Arial;
+}
+.searchbox .button {
+    -webkit-border-radius: 0px !important;
+    -moz-border-radius: 0px !important;
+    border-radius: 0px !important;
+    height: 50px;
+}
+.searchbox {
+    width: 100% !important;
+    display: inline-block;
+    position: relative;
+}
+.searchbox input[type="text"].searchtext {
+    width: 70% !important;
+    float: left;
+    margin: 0px;
+    height: 50px;
+}
+.searchbox .button {
+    width: 30% !important;
+    float: right;
+    margin-left: -1px;
+    position: absolute;
+    top: 0;
+    margin: 0px;
+}
+/* ================= CONTACT FORM 7 ================== */
+div.wpcf7-mail-sent-ok,div.wpcf7-mail-sent-ng,div.wpcf7-spam-blocked,div.wpcf7-validation-errors {
+	border-width: 0px 0px 0px 3px !important;
+    padding: 20px;
+    margin:30px 0px 0px 0px;
+}
+span.wpcf7-not-valid-tip {
+	margin-top: -25px;
+}
+.wpcf7-form p {
+    margin: 0px;
+}
+.wpcf7-form select {
+    margin-bottom: 30px;
+    padding: 15px;
+}
+.wpcf7-form-control {
+    width: 100%;
+}
+/* ================= FOOTER ================== */
+
+#footer {
+    height: auto;
+    margin: 0px auto;
+    width: 100%;
+    max-width: 100%;
+    padding: 0px;
+    position: relative;
+    overflow: hidden;
+    vertical-align: bottom;
+}
+#footer-widgets {
+    padding: 20px;
+}
+#footer-widgets p {
+    margin-bottom: 24px;
+}
+#footer-widgets p:last-child {
+    margin-bottom: 0px;
+}
+#footer-widgets p,
+.footer-widget li a {
+    opacity: 1;
+    -webkit-transition: opacity 0.2s ease-in-out;
+    -moz-transition: opacity 0.2s ease-in-out;
+    -o-transition: opacity 0.2s ease-in-out;
+    -ms-transition: opacity 0.2s ease-in-out;
+}
+#lang_sel ul li a {
+    opacity: 1 !important;
+}
+/* ================= WIDGETS ================== */
+.widget_recent_entries ul,
+.widget_categories ul,
+.widget_recent_comments ul,
+.widget_pages ul,
+.widget_meta ul,
+.widget_archive ul,
+.widget_recent-posts ul,
+.widget_rss ul,
+#recentcomments {
+    list-style: none;
+    padding: 0px 0px 14px 0px;
+    margin: 0px;
+}
+.widget_recent_entries ul li,
+.widget_categories ul li,
+.widget_recent_comments ul li,
+.widget_pages ul li,
+.widget_meta ul li,
+.widget_archive ul li,
+.widget_rss ul li,
+.widget_recent-posts ul li,
+.recentcomments{
+    padding-left: 0px;
+    padding-bottom: 12px;
+    margin-bottom: 12px;
+}
+.widget_recent_entries ul li:last-child,
+.widget_categories ul li:last-child,
+.widget_recent_comments ul li:last-child,
+.widget_pages ul li:last-child,
+.widget_meta ul li:last-child,
+.widget_archive ul li:last-child,
+.widget_rss ul li:last-child,
+.recentcomments:last-child,
+.widget_recent-posts ul li:last-child{
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+    border-bottom: none !important;
+}
+.widget_recent_entries ul li a:hover,
+.widget_categories ul li a:hover,
+.widget_recent_comments ul li a:hover,
+.widget_pages ul li a:hover,
+.widget_meta ul li a:hover,
+.widget_archive ul li a:hover,
+.widget_rss ul li a:hover,
+.widget_recent-posts ul li a:hover,
+.recentcomments a:hover{
+    text-decoration: none;
+    opacity: 1;
+}
+.widget_nav_menu ul {
+    list-style: none;
+    padding: 0px;
+    margin: 10px 0 0 0;
+}
+.widget_nav_menu ul li {
+    padding: 10px 5px 10px 5px;
+    border:none !important;
+    display: inline-block;
+}
+.widget_nav_menu ul ul {
+    padding: 0px 0px 0px 15px;
+}
+.tags-container {
+    position: relative;
+    display: inline-block;
+}
+.footer-info {
+    position: relative;
+    width: 100%;
+    display: inline-block;
+    padding: 10px 40px;
+    vertical-align: bottom;
+    margin: 0;
+}
+.credits {
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    line-height: 32px;
+    font-size: 11px;
+    opacity: 1;
+}
+.credits a{
+	color: #fff;
+}
+.credits a: hover{
+	color: #fff;
+	text-decoration: underline;
+}
+.credit-link-container{
+	text-align: right;
+}
+.tagcloud a {
+    float: left;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    padding: 5px 7px 5px 7px;
+    -webkit-transition: background-color 0.2s ease-in-out;
+    -moz-transition: background-color 0.2s ease-in-out;
+    -o-transition: background-color 0.2s ease-in-out;
+    -ms-transition: background-color 0.2s ease-in-out;
+    opacity: 0.5;
+}
+.page-block .tagcloud a {
+    opacity: 1;
+    border:none !important;
+}
+.tagcloud a:hover {
+    text-decoration: none;
+    opacity: 1;
+}
+.tagcloud:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+.sidebar-tags .tagcloud a {
+    opacity:1;
+    border-left: none !important;
+}
+/* calendar widget */
+
+#wp-calendar {
+    width: 100%;
+    margin-bottom: -20px !important;
+}
+#footer-widgets #wp-calendar {
+    opacity: 0.5;
+}
+#wp-calendar caption {
+    text-align: right;
+    font-size: 12px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+#wp-calendar thead {
+    font-size: 10px;
+}
+#wp-calendar thead th {
+    padding-bottom: 10px;
+}
+#wp-calendar tbody td {
+    text-align: center;
+    padding: 8px;
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    -ms-transition: all 0.4s ease-in-out;
+}
+#wp-calendar tbody td a {
+    text-decoration: underline;
+}
+#wp-calendar tbody .pad {
+    background: none;
+}
+#wp-calendar tfoot #next {
+    font-size: 10px;
+    text-transform: uppercase;
+    text-align: right;
+}
+#wp-calendar tfoot #prev {
+    font-size: 10px;
+    text-transform: uppercase;
+    padding-top: 10px;
+}
+/* ================= SOCIAL ICONS ================== */
+
+.social-icons {
+    list-style-type: none;
+    display: inline-block;
+    margin: 0px;
+    padding: 0px;
+    float: right;
+}
+.social-icons li {
+    float: left;
+    display: block;
+    margin: 0px 0px 0px 15px;
+    padding: 0;
+    line-height: 32px;
+}
+.social-icons li img {
+    width: 15px;
+    height: auto;
+    vertical-align: middle;
+    opacity: 0.5;
+}
+.social-icons li img:hover {
+    opacity: 1;
+}
+.social-icon {
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+.social-icon:hover {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg);
+}
+/* ================= BACK TO TOP BUTTON ================== */
+
+.back-to-top {
+    position: fixed;
+    bottom: 0px;
+    right: 5px;
+    display: none;
+    background-image: url("images/gototop.png")/*tpa=http://www.mrkgym.com/wp-content/themes/mrk/images/gototop.png*/;
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 60px;
+    height: 60px;
+    -webkit-transition: background 0.2s ease-in-out;
+    -moz-transition: background 0.2s ease-in-out;
+    -o-transition: background 0.2s ease-in-out;
+    -ms-transition: background 0.2s ease-in-out;
+    transition: background 0.2s ease-in-out;
+}
+/* ================= WORDPRESS ================== */
+.alignleft {
+    float: left;
+}
+.alignright {
+    float: right;
+}
+.aligncenter {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+img.alignleft {
+    margin: 0px 30px 40px 0px;
+}
+img.alignright {
+    margin: 0px 0px 40px 30px;
+}
+img.aligncenter {
+    margin-bottom: 40px;
+}
+img.alignnone {
+    float: none;
+}
+img.size-full,
+img.size-large,
+img.header-image,
+img.wp-post-image,
+img.alignnone,
+img.alignright,
+img.aligncenter,
+img.alignleft {
+    max-width: 100% !important;
+    height: auto;
+}
+.wp-caption {
+    max-width: 100% !important;
+    margin-bottom: 30px;
+}
+.wp-caption img {
+    max-width: 100% !important;
+    margin-bottom: 30px;
+}
+.wp-caption-text {
+    margin-top: -20px;
+}
+.gallery-caption {} .bypostauthor {} .sticky p {
+    font-weight: bold;
+}
+.message {
+    margin-top: 21px;
+}
+.form-allowed-tags {
+    font-size: 12px;
+}
+.leftcontainer-inner select,
+#footer select {
+    padding: 5px !important;
+    max-width: 100% !important;
+}
+.post-password-form {
+    margin-bottom: 30px;
+}
+.gallery-item img {
+    margin-bottom: 30px;
+}
+.wp-audio-shortcode {
+    margin-bottom: 30px;
+}
+embed,
+iframe {
+    max-width: 100%;
+}
+/* ================= TRANSPARENT COLORS ================== */
+#footer-widgets .widget_recent_entries ul li, #footer-widgets .widget_categories ul li, #footer-widgets .widget_recent_comments ul li, #footer-widgets .widget_pages ul li, #footer-widgets .widget_meta ul li, #footer-widgets .widget_archive ul li, #footer-widgets .widget_rss ul li {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+#footer-widgets hr {
+    background-color: rgba(255, 255, 255, 0.05);
+}
+.tagcloud a {
+    border-left: 3px solid rgba(255, 255, 255, 0.1);
+    background-color: rgba(255, 255, 255, 0.1);
+}
+.slide-bg {
+    background-color: rgba(255, 255, 255, 0.7);
+}
+#caroufredsel-main-wrapper .block {
+    background-color: rgba(255, 255, 255, 0.7);
+}
+.toggleMenu {
+    border-top:1px solid rgba(255, 255, 255, 0.1);
+    border-bottom:1px solid rgba(255, 255, 255, 0.1);
+}
+.nav li li a:hover,
+.nav li li li a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+#footer-widgets {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+.footer-widget .flickr-box li img {
+    border:3px solid rgba(255, 255, 255, 0.1);
+}
+/* ================= MEDIA ================== */
+@media only screen and (max-width: 1240px) {
+	.page-title h1{
+		font-size: 30px;
+	}
+}
+@media only screen and (max-width: 1200px) {
+.back-to-top {
+    position: relative !important;
+    bottom: inherit;
+    right: inherit;
+    width: 100%;
+    height: 60px;
+    display: inline-block !important;
+    vertical-align: bottom;
+}
+#caroufredsel-main-wrapper .slidetext {
+    opacity: 0.9 !important;
+    right: 0 !important;
+}
+}
+@media only screen and (max-width: 900px) {
+    .grid .unit {
+        width: 100% !important;
+    }
+    #site-container {
+        border-top: none !important;
+    }
+    .logo h1{
+        line-height: 1.5 !important;
+    }
+    .nav-container {
+        position: relative;
+        z-index:inherit;
+    }
+    .nav {
+        background-color: rgba(255, 255, 255, 0.1);
+    }
+    .nav > li {
+        float: none;
+    }
+    .nav > li > .parent {
+        background-image: url("images/downArrow.png")/*tpa=http://www.mrkgym.com/wp-content/themes/mrk/images/downArrow.png*/;
+        background-repeat: no-repeat;
+        background-position: 95% 50%;
+    }
+    .nav li li .parent {
+        background-image: url("images/downArrow.png")/*tpa=http://www.mrkgym.com/wp-content/themes/mrk/images/downArrow.png*/;
+        background-repeat: no-repeat;
+        background-position: 95% 50%;
+    }
+    .nav li li .parent:hover {
+        background-image: url("images/downArrow.png")/*tpa=http://www.mrkgym.com/wp-content/themes/mrk/images/downArrow.png*/;
+        background-repeat: no-repeat;
+        background-position: 95% 50%;
+    }
+    .nav {
+        float: none;
+        line-height: 40px;
+        padding-right: 0px;
+    }
+    .nav ul li:first-child {
+        margin-top: 0px;
+    }
+    .nav ul li:last-child {
+        margin-bottom: 0px;
+    }
+    .nav ul {
+        display: block;
+        width: 100%;
+    }
+    .nav > li.hover > ul,
+    .nav li li.hover ul {
+        position: static;
+    }
+    .nav > li > a:hover {
+        background-color: inherit;
+    }
+    .nav a,.nav ul li a {
+        padding: 5px 40px;
+    }
+    .maincontainer {
+        padding-top: 60px;
+    }
+    .footer-widget {
+        float: none;
+        width: 100%;
+        padding: 0px 0px 60px 0px;
+    }
+
+}
+@media  (max-width: 768px) {
+    h1 {
+        font-size: 34px;
+    }
+    h2 {
+        font-size: 30px;
+    }
+    h3 {
+        font-size: 26px;
+    }
+    h4 {
+        font-size: 22px;
+    }
+    h5 {
+        font-size: 18px;
+    }
+    h6 {
+        font-size: 16px;
+    }
+    blockquote {
+        padding-left:40px;
+    }
+    blockquote:before {
+	   width: 10px;
+    }
+    blockquote:after {
+	   content: '';
+    }
+    .postcontent,.gallerycontent {
+        float:none;
+        width: 100%;
+    }
+    .blogimage,.galleryimage {
+        position: relative !important;
+        width: 100%;
+        height: 200px;
+    }
+    .credits,
+    .credit-link-container{
+		text-align: center;
+	}
+}
+@media only screen and (max-width: 640px) {
+    .comments_block .children li {
+        padding-left: 0px;
+        background-image: none;
+    }
+}
+@media only screen and (max-width: 480px) {
+    .page-title {
+        padding: 0px !important;
+    }
+    .comments p {
+        margin-bottom: 40px !important;
+    }
+    .comments_content {
+        padding-right: 0px;
+    }
+}

@@ -1,0 +1,1529 @@
+@font-face {
+	font-family: 'OpenSans-Semibold';
+	src: url("fonts/OpenSans-Semibold.eot-#iefix")/*tpa=http://www.mrkgym.com/wp-content/themes/mrk/fonts/OpenSans-Semibold.eot?#iefix*/ format('embedded-opentype'), url("fonts/OpenSans-Semibold.woff")/*tpa=http://www.mrkgym.com/wp-content/themes/mrk/fonts/OpenSans-Semibold.woff*/ format('woff'), url("fonts/OpenSans-Semibold.ttf")/*tpa=http://www.mrkgym.com/wp-content/themes/mrk/fonts/OpenSans-Semibold.ttf*/ format('truetype'), url("fonts/OpenSans-Semibold.svg#OpenSans-Semibold")/*tpa=http://www.mrkgym.com/wp-content/themes/mrk/fonts/OpenSans-Semibold.svg#OpenSans-Semibold*/ format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'OpenSans-Light';
+	src: url("fonts/OpenSans-Light.eot-#iefix")/*tpa=http://www.mrkgym.com/wp-content/themes/mrk/fonts/OpenSans-Light.eot?#iefix*/ format('embedded-opentype'), url("fonts/OpenSans-Light.woff")/*tpa=http://www.mrkgym.com/wp-content/themes/mrk/fonts/OpenSans-Light.woff*/ format('woff'), url("fonts/OpenSans-Light.ttf")/*tpa=http://www.mrkgym.com/wp-content/themes/mrk/fonts/OpenSans-Light.ttf*/ format('truetype'), url("fonts/OpenSans-Light.svg#OpenSans-Light")/*tpa=http://www.mrkgym.com/wp-content/themes/mrk/fonts/OpenSans-Light.svg#OpenSans-Light*/ format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'OpenSans-Extrabold';
+	src: url("fonts/OpenSans-Extrabold.eot-#iefix")/*tpa=http://www.mrkgym.com/wp-content/themes/mrk/fonts/OpenSans-Extrabold.eot?#iefix*/ format('embedded-opentype'), url("fonts/OpenSans-Extrabold.woff")/*tpa=http://www.mrkgym.com/wp-content/themes/mrk/fonts/OpenSans-Extrabold.woff*/ format('woff'), url("fonts/OpenSans-Extrabold.ttf")/*tpa=http://www.mrkgym.com/wp-content/themes/mrk/fonts/OpenSans-Extrabold.ttf*/ format('truetype'), url("fonts/OpenSans-Extrabold.svg#OpenSans-Extrabold")/*tpa=http://www.mrkgym.com/wp-content/themes/mrk/fonts/OpenSans-Extrabold.svg#OpenSans-Extrabold*/ format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'OpenSans-Bold';
+	src: url("fonts/OpenSans-Bold.eot-#iefix")/*tpa=http://www.mrkgym.com/wp-content/themes/mrk/fonts/OpenSans-Bold.eot?#iefix*/ format('embedded-opentype'), url("fonts/OpenSans-Bold.woff")/*tpa=http://www.mrkgym.com/wp-content/themes/mrk/fonts/OpenSans-Bold.woff*/ format('woff'), url("fonts/OpenSans-Bold.ttf")/*tpa=http://www.mrkgym.com/wp-content/themes/mrk/fonts/OpenSans-Bold.ttf*/ format('truetype'), url("fonts/OpenSans-Bold.svg#OpenSans-Bold")/*tpa=http://www.mrkgym.com/wp-content/themes/mrk/fonts/OpenSans-Bold.svg#OpenSans-Bold*/ format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'OpenSans';
+	src: url("fonts/OpenSans.eot-#iefix")/*tpa=http://www.mrkgym.com/wp-content/themes/mrk/fonts/OpenSans.eot?#iefix*/ format('embedded-opentype'), url("fonts/OpenSans.woff")/*tpa=http://www.mrkgym.com/wp-content/themes/mrk/fonts/OpenSans.woff*/ format('woff'), url("fonts/OpenSans.ttf")/*tpa=http://www.mrkgym.com/wp-content/themes/mrk/fonts/OpenSans.ttf*/ format('truetype'), url("fonts/OpenSans.svg#OpenSans")/*tpa=http://www.mrkgym.com/wp-content/themes/mrk/fonts/OpenSans.svg#OpenSans*/ format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+/* ================= FONTS ================== */
+h1, h2, h3, h4, h5, h6, strong, .slidetext, .button, input[type="submit"], .next a, .previous a, .testimonial-name, .readmore-button, .resp-tabs-list li, .ns_nerveSlider .ns_slideContent div span, .featured-image-date p, .slidetext {
+	font-family: "Open Sans", "Microsoft YaHei", "SimHei", "Microsoft JengHei", Tahoma, Arial, Helvetica, sans-serif !important;
+}
+body, p, .nav-buttons span, .nav, .testimonial-name span {
+	font-family: "Open Sans", "Microsoft YaHei", "SimHei", "Microsoft JengHei", Tahoma, Arial, Helvetica, sans-serif !important;
+}
+body, p, .ionTabs__tab, input[type="text"], input[type="email"], input[type="number"], input[type="date"], input[type="password"], textarea, .nav ul, .accordion-header {
+	font-size: 13px;
+}
+h1 {
+	font-size: 36px;
+}
+h2, .slidetext {
+	font-size: 30px;
+}
+h3 {
+	font-size: 26px;
+}
+h4 {
+	font-size: 24px;
+}
+h5, .toggleMenu, .testimonial-name, .featured-image-date p {
+	font-size: 16px;
+}
+h6, blockquote p, .testimonial .testimonial-text p, .gallery-title, .resp-tabs-list li, h2.resp-accordion {
+	font-size: 14px;
+}
+.nav {
+	font-size: 17px;
+}
+.nav ul {
+	width: 14em;
+}
+img {
+	max-width: 100%;
+}
+/* ================= ICONS ================== */
+[class^="flaticon-"]:before, [class*=" flaticon-"]:before, [class^="flaticon-"]:after, [class*=" flaticon-"]:after {
+	color: #37D49B;
+}
+/* ================= GENERAL STYLES ================== */
+.blogimage, .galleryimage, #lightGallery-slider .lightGallery-slide {
+	background: url("images/loader.gif")/*tpa=http://www.mrkgym.com/wp-content/themes/mrk/images/loader.gif*/ no-repeat scroll center center transparent;
+}
+body {
+	color: #666666;
+	background-color: #fff;
+	min-width:320px;
+}
+h1, h2, h3, h4, h5 {
+	color: #333;
+}
+a {
+	color: #37D49B;
+}
+a:hover {
+	color: #37D49B;
+}
+h6, p {
+	color: #666666;
+}
+hr {
+	background-color: #f5f1f0;
+}
+.label {
+	background-color: #f5f1f0;
+	color: #333333;
+}
+.label a {
+	color: #fff;
+}
+.label a:hover {
+	color: #fff;
+}
+blockquote {
+	background: #f5f1f0;
+}
+blockquote:before {
+	background: #37D49B;
+}
+blockquote:after {
+	color: #fff;
+}
+/* ================= CAROUFREDSEL ================== */
+.nav-buttons {
+	background-color: #37D49B;
+}
+.nav-buttons span {
+	color: #fff;
+}
+.micon {
+	background-color: #37D49B;
+}
+#caroufredsel-main-wrapper .slidetext {
+	color: #fff;
+	background-color: #37D49B;
+}
+#caroufredsel-main-wrapper .slidetext a {
+	color: #fff;
+}
+/* ================= MAIN MENU  ================== */
+.logo h1 {
+	color: #000 !important;
+}
+.nav-container {
+	background-color: #fff;
+	z-index: 100;
+}
+.navbar{
+	border-radius:0;
+	-moz-border-radius:0;
+	-webkit-border-radius:0;
+}
+.toggleMenu {
+	background-color: #37D49B;
+	color: #fff !important;
+}
+.nav a {
+	color: #666666;
+	font-size: 14px;
+	padding: 10px 10px;
+}
+.nav > .activelink > a {
+	background: none;
+	color: #37D49B;
+}
+.nav > li > a:hover {
+	background: none;
+	color: #37D49B !important;
+}
+.nav li ul {
+	background:rgba(255,255,255,0.95);
+}
+
+.nav li ul.sub-menu{
+	-webkit-box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.1);
+	-moz-box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.1);
+	box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.1);
+}
+.nav li ul.sub-menu li a{
+	border-bottom:#EEE solid 1px;
+	line-height:1.6em;
+	padding:10px;
+}
+.nav li li a, .nav li li li a {
+	color: #fff;
+}
+.nav li li a:hover, .nav li li li a:hover {
+	color: #fff;
+}
+/* ================= PAGE STRUCTURE ================== */
+.page-title h1, .map-container h1 {
+	color: #333;
+}
+.max-600{
+	max-width: 600px;
+}
+/* ================= LATEST NEWS ================== */
+.latest-news > figcaption {
+	background-color: #f5f1f0;
+}
+.latest-news > figcaption > div > hr {
+	background-color: #fff;
+}
+.latest-news h5 a {
+	color: #333333;
+}
+.latest-news h5 a:hover {
+	color: #37D49B;
+}
+/* ================= NEWS ================== */
+.blogcontainer {
+	background-color: #f5f1f0;
+}
+.blogimage a {
+	background-color: #37D49B;
+}
+.postcontent h4 a {
+	color: #333333;
+}
+.postcontent h4 a:hover {
+	color: #37D49B;
+}
+.postcontent > hr {
+	background-color: #fff;
+}
+.featured-image-date {
+	background-color: #37D49B;
+}
+.featured-image-date p {
+	color: #fff;
+}
+.blogmetadata {
+	background-color: #f5f1f0;
+}
+.blogmetadata a {
+	color: #666666;
+}
+.blogmetadata a:hover {
+	color: #37D49B;
+}
+.blogmetadata span {
+	color: #fff;
+}
+/* ================= COMMENTS  ================== */
+.comments_content {
+	border-top: 1px solid #f5f1f0;
+}
+/* ================= SIDEBAR ================== */
+.widget_recent_entries ul li, .widget_categories ul li, .widget_recent_comments ul li, .widget_pages ul li, .widget_meta ul li, .widget_archive ul li, .widget_rss ul li, .widget_recent-posts ul li, .recentcomments, .sidebar-list li {
+	border-bottom: 1px solid #f5f1f0;
+}
+/* ================= FORMS ================== */
+input, textarea, select {
+	border: 1px solid #f5f1f0;
+	color: #666666;
+}
+input:focus, textarea:focus, select:focus {
+	border: 1px solid #37D49B;
+	color: #333333;
+}
+.next a, .previous a, input[type="submit"] {
+	color: #fff !important;
+	background-color: #37D49B;
+}
+.next a:hover, .previous a:hover, input[type="submit"]:hover {
+	color: #fff !important;
+	background-color: #333333;
+}
+.searchbox .button:hover {
+	background-color: #37D49B;
+}
+/* ================= FOOTER ================== */
+#footer {
+	background-color: #333333;
+	color: #fff;
+}
+#footer h1, #footer h2, #footer h3, #footer h4, #footer h5, #footer h6, #footer-widgets p, .footer-widget li a, .footer-widget ul li a:hover, .credits, .tagcloud a {
+	color: #fff;
+}
+.page-block .tagcloud a:hover, .tagcloud a:hover {
+	color: #fff;
+	background-color: #37D49B;
+}
+.page-block .tagcloud a {
+	color: #666666;
+	background-color: #f5f1f0;
+}
+#footer-widgets #wp-calendar caption, #footer-widgets #wp-calendar tbody {
+	color: #fff;
+}
+#footer-widgets #wp-calendar a, #footer-widgets #wp-calendar a:hover {
+	color: #fff !important;
+}
+#footer-widgets #wp-calendar tbody td {
+	border: 1px solid #666666;
+}
+img.web-chat{
+	max-height: 100px;
+}
+/* ================= BACK TO TOP BUTTON ================== */
+.back-to-top {
+	background-color: #37D49B;
+}
+.back-to-top:hover {
+	background-color: #37D49B;
+}
+/* ================= ACCORDION  ================== */
+#accordion-container {
+	border-top: 1px solid #f5f1f0;
+}
+.accordion-header {
+	border-bottom: 1px solid #f5f1f0;
+	font-size: 20px;
+	font-weight: bold;
+	padding: 10px 0;
+}
+.accordion-header:hover {
+	color: #000;
+}
+.active-header {
+	color: #000;
+}
+.accordion-content {
+	border-bottom: 1px solid #f5f1f0;
+	display: none;
+	font-size: 16px;
+	padding: 5px;
+}
+/*General */
+.displaynone {
+	display: none;
+}
+.light {
+	font-family: "OpenSans-Light", Arial;
+}
+.bold {
+	font-weight: blod;
+}
+.black {
+	color: #000;
+}
+.black-3 {
+	color: #333;
+}
+.black-6 {
+	color: #666;
+}
+.black-9 {
+	color: #999;
+}
+.green {
+	color: #37D59C;
+}
+.orange {
+	color: #F7971C;
+}
+.white {
+	color: #fff;
+}
+.white-bg {
+	background: #fff;
+}
+.white-bg.button {
+	color: #ccc !important;
+}
+.gray-bg {
+	background: #f5f5f5;
+}
+.green-bg {
+	background: #37D59C;
+}
+.text_aligncenter {
+	text-align: center;
+}
+.text_alignleft {
+	text-align: left;
+}
+.text_alignright {
+	text-align: right;
+}
+.page-block-padding {
+	padding: 20px 70px
+}
+.padding-large-v {
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+.padding-large-h {
+	padding-left: 30px;
+	padding-right: 30px;
+}
+.padding-base-v {
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+.padding-base-h {
+	padding-left: 20px;
+	padding-right: 20px;
+}
+.padding-small-v {
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+.padding-small-h {
+	padding-left: 10px;
+	padding-right: 10px;
+}
+.no-padding-v {
+	padding-top: 0px;
+	padding-bottom: 0px;
+}
+.no-padding-h {
+	padding-left: 0px;
+	padding-right: 0px;
+}
+.show-grid-lg {
+	margin-bottom: 35px;
+}
+.show-grid-md {
+	margin-bottom: 25px;
+}
+.show-grid-sm {
+	margin-bottom: 15px;
+}
+.show-grid-xs {
+	margin-bottom: 5px;
+}
+.quote-left-bg {
+	background: url( "images/quote-left.png")/*tpa=http://www.mrkgym.com/wp-content/themes/mrk/images/quote-left.png*/ no-repeat left top;
+	padding-left: 60px;
+	padding-top: 60px;
+}
+.quote-right-bg {
+	background: url( "images/quote-right.png")/*tpa=http://www.mrkgym.com/wp-content/themes/mrk/images/quote-right.png*/ no-repeat right bottom;
+	padding-bottom: 55px;
+}
+.required {
+	color: #d90000;
+}
+.custom-left {
+	float: left;
+}
+.custom-right {
+	float: right;
+}
+.container {
+	max-width: 1200px;
+}
+ul.list-style-none {
+	list-style: none;
+	padding-left: 0;
+	margin: 0;
+}
+ul.inline-block li {
+	display: inline-block;
+}
+/*Header*/
+header {
+	font-size: 16px;
+	color: #fff;
+	-webkit-box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.1);
+	-moz-box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.1);
+	box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.1);
+}
+.nav-container {
+	padding: 0;
+	margin: 0;
+	border: none;
+}
+.fix-header {
+	background: rgba(255, 255, 255, 0.95) none repeat scroll 0 0;
+	-webkit-box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.1);
+	-moz-box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.1);
+	box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.1);
+	padding-bottom: 0;
+	padding-top: 0;
+	position: fixed;
+	top: 0;
+	left:0;
+	width: 100%;
+}
+.logo {
+	width: 100%;
+	text-align: center;
+	float: none;
+}
+.logo img {
+	padding: 20px 0 0;
+}
+ul#menu-primary-menu li a {
+	font-weight: bold;
+	font-size: 15px;
+	color: #000;
+}
+ul#menu-primary-menu > li {
+	margin-right: 25px;
+	margin-left:25px;
+}
+ul#menu-primary-menu > li:last-child {
+	margin-right: 0;
+}
+.nav li ul.sub-menu li:hover{
+	background:#EEE;
+}
+/*Footer*/
+#footer-widgets-top {
+	background: #37D59C;
+	padding: 40px 0 30px;
+}
+.footer-widget-right{
+	padding-top: 18px;
+}
+#footer-widgets-bottom, .footer-copyright {
+	background: #333;
+}
+#footer-widgets-bottom {
+	border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+	padding: 50px 0 40px;
+}
+.footer-copyright {
+	padding: 30px 0;
+}
+#footer .contact-position, #footer .contact-tel {
+	padding: 7px 0 7px 65px;
+}
+#footer .contact-position strong, #footer .contact-tel strong {
+	display: block;
+}
+#footer .contact-position a,
+#footer .contact-position a:hover{
+	color: #fff;
+}
+#footer .contact-position {
+	background: url("images/footer-contact-pos.png")/*tpa=http://www.mrkgym.com/wp-content/themes/mrk/images/footer-contact-pos.png*/ left center no-repeat;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+#footer .contact-position-01 {
+	background-image: url("images/icon-yinyuan.jpg")/*tpa=http://www.mrkgym.com/wp-content/themes/mrk/images/icon-yinyuan.jpg*/;
+}
+#footer .contact-position-02 {
+	background-image: url("images/icon-legou.jpg")/*tpa=http://www.mrkgym.com/wp-content/themes/mrk/images/icon-legou.jpg*/;
+}
+#footer .contact-position-03 {
+	background-image: url("images/icon-zhongqing.jpg")/*tpa=http://www.mrkgym.com/wp-content/themes/mrk/images/icon-zhongqing.jpg*/;
+}
+#footer .contact-position-04 {
+	background-image: url("images/icon-xinchang.jpg")/*tpa=http://www.mrkgym.com/wp-content/themes/mrk/images/icon-xinchang.jpg*/;
+}
+#footer .contact-position-05 {
+	background-image: url("images/icon-nanning.jpg")/*tpa=http://www.mrkgym.com/wp-content/themes/mrk/images/icon-nanning.jpg*/;
+}
+#footer .contact-position-06 {
+	background-image: url("images/icon-henan.jpg")/*tpa=http://www.mrkgym.com/wp-content/themes/mrk/images/icon-henan.jpg*/;
+}
+#footer .contact-position-07 {
+	background-image: url("images/icon-tiyuzhongxin.jpg")/*tpa=http://www.mrkgym.com/wp-content/themes/mrk/images/icon-tiyuzhongxin.jpg*/;
+}
+#footer .contact-position > div {
+	padding: 10px 0;
+}
+#footer .contact-tel {
+	background: url("images/footer-contact-tel.png")/*tpa=http://www.mrkgym.com/wp-content/themes/mrk/images/footer-contact-tel.png*/ left center no-repeat;
+}
+.footer-widget-right ul li {
+	display: inline-block;
+	float: left;
+	width: 30%;
+	font-weight: bold;
+	margin-bottom: 15px;
+}
+.footer-widget-right ul li:nth-child(3n+1) {
+	margin-left: 10%;
+}
+.footer-widget-right ul li img {
+	margin-right: 20px;
+	vertical-align: text-top;
+}
+#footer-widgets-bottom img.web-chat {
+	margin: 20px 0 17px;
+}
+#footer-widgets-bottom h3 {
+	margin-bottom: 5px;
+}
+.footer-copyright, .footer-copyright a {
+	color: #999;
+	font-size: 13px;
+}
+.footer-copyright a:hover {
+	color: #fff;
+}
+/*Slider*/
+.tparrows.custom {
+	background-color: rgba(0,0,0,0.5);
+	height: 60px;
+	width: 60px;
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+.tparrows.custom:hover {
+	background-color: rgba(0,0,0,0.7);
+}
+.tp-leftarrow.custom {
+	background-image: url("images/custom-left.png")/*tpa=http://www.mrkgym.com/wp-content/themes/mrk/images/custom-left.png*/;
+}
+.tp-rightarrow.custom {
+	background-image: url("images/custom-right.png")/*tpa=http://www.mrkgym.com/wp-content/themes/mrk/images/custom-right.png*/;
+}
+.tp-bullets.simplebullets.custom .bullet {
+	background: rgba(0, 0, 0, 0) url("images/custom-bullet.png")/*tpa=http://www.mrkgym.com/wp-content/themes/mrk/images/custom-bullet.png*/ no-repeat scroll left top;
+	cursor: pointer;
+	float: left;
+	height: 12px;
+	margin-left: 5px;
+	margin-right: 0;
+	margin-top: 0;
+	position: relative;
+	width: 12px;
+}
+.tp-bullets.simplebullets.custom .bullet:first-child {
+	margin-left: 0;
+}
+.tp-bullets.simplebullets.custom .bullet:hover, .tp-bullets.simplebullets.custom .bullet.selected {
+	background-position: left bottom;
+}
+.slider-text-01 {
+	text-align: center;
+}
+.slider-text-01 h1 {
+	font-size: 120px;
+	line-height: 1em;
+}
+.slider-text-01 h3 {
+	border-bottom: 2px solid #000;
+	padding: 0 60px 25px;
+	margin-bottom: 5px;
+	font-weight: bold;
+	font-size: 30px;
+}
+.slider-button-01 .slide-button {
+	background: url("images/bg-right.png")/*tpa=http://www.mrkgym.com/wp-content/themes/mrk/images/bg-right.png*/ no-repeat scroll right top;
+}
+.slider-button-01 .slide-button a {
+	background: #37d59c url("images/slider-button-icon-yellow.png")/*tpa=http://www.mrkgym.com/wp-content/themes/mrk/images/slider-button-icon-yellow.png*/ no-repeat left center;
+	color: #fff;
+	display: block;
+	font-style: italic;
+	line-height: 51px;
+	margin-right: 1.1em;
+	padding-left: 40px;
+	text-transform: uppercase;
+	font-weight: bold;
+	padding-right: 30px;
+}
+.slider-text-02 h3:before, .slider-text-02 h3:after {
+	background-color: #fff;
+	content: "";
+	display: inline-block;
+	height: 1px;
+	margin-top: -0.65em;
+	vertical-align: middle;
+	width: 110px;
+}
+.slider-text-02 h3 span {
+	background: transparent;
+	padding: 0 20px;
+	line-height: 1.3em;
+	font-size: 1.3em !important;
+	color: #fff;
+}
+.slider-text-03 span {
+	color: #FAFF55;
+}
+.slider-button-02 .slide-button {
+	background: url("images/bg-transparent.png")/*tpa=http://www.mrkgym.com/wp-content/themes/mrk/images/bg-transparent.png*/ no-repeat scroll right top;
+}
+.slider-button-02 .slide-button a {
+	background: transparent url("images/slider-button-icon-green.png")/*tpa=http://www.mrkgym.com/wp-content/themes/mrk/images/slider-button-icon-green.png*/ no-repeat left center;
+	color: #fff;
+	display: block;
+	font-style: italic;
+	line-height: 51px;
+	margin-right: 1.1em;
+	padding-left: 40px;
+	padding-right: 40px;
+	text-transform: uppercase;
+	font-weight: bold;
+	border-width: 1px 0 1px 1px !important;
+	border-color: #fff;
+	border-style: solid;
+}
+@media (max-width: 1200px) {
+.slide-button a {
+	padding-right: 0 !important;
+}
+}
+@media (max-width: 770px) {
+.slider-text-01 h3 {
+	border-bottom: 2px solid #000 !important;
+	margin-bottom: 10px !important;
+	padding-bottom: 10px !important;
+}
+.slider-text-02 h3 span {
+	font-size: 2em!important;
+	line-height: 2em;
+}
+.slider-text-02 h3:before,  .slider-text-02 h3:after {
+	margin-top: -1em;
+	width: 50px;
+}
+.slide-button a {
+	background-position: -5px center !important;
+}
+}
+@media (min-width: 480px) and (max-width: 770px) {
+.slider-text-01 h3 {
+	font-size: 3em!important;
+}
+}
+@media (max-width: 480px) {
+.slider-text-01 h3 {
+	font-size: 5em!important;
+	margin-bottom: 5px !important;
+	padding-bottom: 5px !important;
+}
+}
+/*Home*/
+.home-guide-section {
+	position: relative;
+	top: -50px;
+	z-index: 99;
+}
+.home-guide-section ul li .guide-content-wrapper {
+	position: relative;
+	background: #000;
+}
+.home-guide-section ul li:hover .guide-content-wrapper img{
+	opacity: 1;
+	filter:alpha(opacity=100);
+}
+.home-guide-section ul li .guide-content {
+	position: absolute;
+	top: 50px;
+}
+.home-guide-section .home-guide-02 img {
+	opacity: 0.7;
+	filter:alpha(opacity=70);
+}
+.home-guide-section .home-guide-03 img {
+	opacity: 0.8;
+	filter:alpha(opacity=80);
+}
+.guide-content h3, .guide-content h4 {
+	margin-bottom: 10px;
+}
+.guide-content h3 a, .guide-content h4 a,
+.guide-content h3 a:hover, .guide-content h4 a:hover {
+	color: #fff;
+}
+.guide-content h3 {
+	background: url("images/bg-right.png")/*tpa=http://www.mrkgym.com/wp-content/themes/mrk/images/bg-right.png*/ no-repeat right center;
+}
+.guide-content .guide-title {
+	background: #37D59C;
+	text-transform: uppercase;
+	line-height: 50px;
+	color: #fff;
+	margin-right: 40px;
+	padding-left: 15px;
+	font-style: italic;
+	display: block;
+	font-weight: 700;
+}
+.guide-content h4 {
+	font-size: 18px;
+	color: #fff;
+	padding-left: 15px;
+	line-height: 25px;
+	font-weight: bold;
+}
+.custom-button, .custom-button a {
+	display: inline-block;
+}
+.guide-content .custom-button {
+	padding-left: 18px;
+	margin-top: 8px;
+}
+.guide-content .custom-button a {
+	color: #333;
+	padding: 8px 10px;
+	background: #FBFF56;
+	font-weight: bold;
+}
+.guide-content .custom-button a:hover{
+	color: #000;
+	background: #37d59c;
+}
+.center-single-wrapper.center-single-wrapper-left img {
+	margin-top: -28px;
+}
+.center-single-wrapper .center-single-content {
+	position: relative;
+}
+.center-single-wrapper h4 {
+	position: absolute;
+	top: 50px;
+	margin: 0;
+}
+.center-single-wrapper-left h4 {
+	background: rgba(0, 0, 0, 0) url("images/bg-right.png")/*tpa=http://www.mrkgym.com/wp-content/themes/mrk/images/bg-right.png*/ no-repeat scroll right center;
+	background-size: 72%;
+}
+.center-single-wrapper-right h4 {
+	background: rgba(0, 0, 0, 0) url("images/bg-left.png")/*tpa=http://www.mrkgym.com/wp-content/themes/mrk/images/bg-left.png*/ no-repeat scroll left center;
+	background-size: 72%;
+	right: 0;
+}
+.center-single-wrapper h4 span {
+	background: #37d59c none repeat scroll 0 0;
+	display: block;
+	line-height: 36px;
+	font-size: 18px;
+	font-weight: bold;
+}
+.center-single-wrapper-left h4 span {
+	padding-left: 10px;
+	margin-right: 40px;
+}
+.center-single-wrapper-right h4 span {
+	padding-right: 10px;
+	margin-left: 40px;
+}
+.center-single-wrapper h4 span a {
+	color: #fff;
+}
+.center-single-wrapper {
+	margin-bottom: 30px;
+}
+.center-left-bottom h4 {
+	margin-bottom: 20px;
+}
+.center-left-bottom .en-news {
+	background: #37D59C;
+	text-transform: uppercase;
+	color: #fff;
+	font-size: 18px;
+	margin-right: 10px;
+	padding: 2px 12px;
+	display: inline-block;
+	line-height: 25px;
+}
+.center-left-bottom .cn-news {
+	color: #000000;
+	line-height: 32px;
+	font-size: 24px;
+}
+.su-posts-custom-loop .su-post {
+	border-bottom: 1px solid #EEEEEE;
+	margin-bottom: 10px;
+	padding-bottom: 10px;
+	padding-left:0;
+	padding-right:70px;
+	position:relative;
+}
+.su-posts-custom-loop .su-post:last-child {
+	border-bottom: 0;
+}
+.su-posts-custom-loop .su-post .su-post-title {
+	font-size: 13px;
+	line-height: 19px;
+	margin-bottom: 0;
+}
+.su-posts-custom-loop .su-post .su-post-meta {
+	background: #eeeeee;
+	padding: 5px;
+	font-size: 11px;
+	color: #000;
+	position:absolute;
+	right:0;
+	top:0;
+}
+.su-posts-custom-loop .su-post .su-post-title a {
+	color: #545454;
+}
+.su-posts-custom-loop .su-post .su-post-title a:hover {
+	color: #37d49b;
+}
+.center-left-bottom .read-more a {
+	color: #333333;
+	font-weight: bold;
+	padding: 0;
+	background: none;
+}
+.center-left-bottom .read-more {
+	background: transparent;
+}
+.jcarousel-title h3, .jcarousel-title h4 {
+	display: inline-block;
+	margin: 0;
+	padding-bottom: 15px;
+}
+.jcarousel-title h4 {
+	color: #000;
+	padding: 0 20px 15px 0;
+}
+.jcarousel-title {
+	border-bottom: 1px solid #ccc;
+	padding-top: 50px;
+	max-width: 1170px;
+	margin: 0 auto 10px;
+}
+.jcarousel-title:after {
+	background: #37D59C;
+	content: " ";
+	display: block;
+	height: 1px;
+	margin: 0 auto;
+	width: 250px;
+}
+.page-title {
+	min-height: 180px;
+	background-color:#EEE;
+}
+.page-title h1 {
+	font-size: 36px;
+	padding-left: 0;
+	padding: 50px 60px 5px 0;
+	border-bottom: 2px solid #333;
+	display: inline-block;
+	margin-bottom: 5px;
+}
+.page-title h1::after {
+	content: none;
+}
+.page-title h3 {
+	font-size: 20px;
+	margin: 0;
+}
+#site-container section.has-bottom {
+	padding-bottom: 70px;
+}
+.gray-line {
+	text-align: center;
+	margin: 0 0 50px;
+	background: url("images/line-gray.png")/*tpa=http://www.mrkgym.com/wp-content/themes/mrk/images/line-gray.png*/ repeat-x center center;
+}
+.gray-line.text-alignleft{
+	text-align: left;
+}
+.gray-line.has-margin {
+	margin-top: 70px;
+}
+.gray-line h1,
+.gray-line h2,
+.gray-line h3,
+.gray-line h4,
+.gray-line h5{
+	background: #fff;
+	display: inline-block;
+	margin: 0;
+	padding: 0 25px;
+}
+.gray-line.text-alignleft h1,
+.gray-line.text-alignleft h2,
+.gray-line.text-alignleft h3,
+.gray-line.text-alignleft h4,
+.gray-line.text-alignleft h5{
+	padding-left:0;
+}
+.gray-line span{
+	margin-right: 10px;
+	margin-left: 10px;
+}
+.gray-line.text-alignleft span{
+	margin-right: 10px;
+	margin-left: 0;
+}
+
+.gray-line h4 .en-title {
+	font-size: 20px;
+}
+.hasbottom{
+	margin-bottom:30px;
+}
+.mrk-bg-section-left {
+	width: 47%;
+}
+.mrk-bg-section-right {
+	width: 44%;
+}
+.mrk-bg-section-left img, .mrk-bg-section-right img {
+	margin: 0 0 35px;
+}
+.mrk-intro-section-left {
+	width: 47%;
+	margin-bottom: 40px;
+}
+.mrk-intro-section-right {
+	width: 50%;
+	max-width: 570px;
+}
+.mrk-intro-section-left h5 {
+	padding: 20px 0 0;
+	margin-bottom: 20px;
+}
+#carousel.flexslider li {
+	margin-right: 10px;
+}
+#slider.flexslider {
+	margin-bottom: 10px;
+}
+.main-content {
+	padding-top: 70px;
+	padding-bottom: 70px;
+}
+/*Page SIDEBAR*/
+.simple-section-nav ul {
+	padding: 0;
+}
+.simple-section-nav ul li {
+	list-style: none;
+}
+/*
+.simple-section-nav .page_item_has_children > a{
+	display: block;
+}
+.simple-section-nav .page_item_has_children ul.children li:last-child{
+	border-bottom: none !important;
+}
+*/
+.simple-section-nav > ul > li, .widget_categories > ul > li {
+	border-top: 1px solid #ddd;
+	padding: 15px !important;
+	border-bottom: none;
+	margin: 0;
+}
+/*
+.simple-section-nav li:last-child, .widget_categories ul li:last-child {
+	border-bottom: 1px solid #ddd !important;
+}
+.simple-section-nav li.page_item_has_children{
+	padding-bottom: 0 !important;
+}*/
+ul.children{
+	padding-left:15px;
+}
+ul.children li{
+	padding:15px 0;
+	border-bottom:#DDD solid 1px;
+}
+.simple-section-nav li.current_page_item, .widget_categories li.current-cat {
+	background: url("images/sidebar-icon.png")/*tpa=http://www.mrkgym.com/wp-content/themes/mrk/images/sidebar-icon.png*/ left 20px no-repeat;
+	margin-bottom: 0 !important;
+	padding:15px;
+}
+.simple-section-nav li a, .widget_categories li a {
+	font-size: 16px;
+	color: #666;
+}
+.simple-section-nav > ul > li.current_page_item > a,
+.simple-section-nav ul > li:hover > a,
+.children li.current_page_item a,
+.widget_categories ul > li.current-cat > a,
+.widget_categories ul > li:hover > a{
+	color: #37D49B;
+}
+#mainsidebar {
+	margin-bottom: 40px;
+}
+#mainsidebar h5 {
+	font-size: 24px;
+	color: #000;
+	margin-bottom: 30px;
+}
+.sidebar-content-wrapper {
+	margin-left: 10px;
+}
+.contact-info {
+	max-width: 820px;
+	margin: 0 auto;
+	padding-top: 15px;
+	color: #999999;
+}
+.contact-info ul {
+	border-bottom: 1px solid #ddd;
+	margin-bottom: 20px;
+	padding-bottom: 35px;
+	padding-top: 20px;
+	font-size: 14px;
+}
+.contact-info ul:last-child {
+	border: none;
+	padding-bottom: 0;
+	margin-bottom: 0;
+}
+.contact-info li {
+	display: inline-block;
+	margin-bottom: 10px;
+}
+.contact-info li.position-info {
+	max-width: 250px;
+}
+.contact-info li img {
+	margin-bottom: 35px;
+}
+.contact-form-section {
+	padding-top: 25px;
+}
+.contact-form-section .gray-line {
+	margin-bottom: 30px;
+}
+.contact-form-section .gray-line h4 {
+	background: #f5f5f5;
+}
+.contact-us-form {
+	padding: 50px 0 10px;
+	max-width: 550px;
+	margin: 0 auto;
+}
+input, textarea, select {
+	padding: 10px 12px;
+	margin: 0 0 20px !important;
+}
+div.wpcf7 img.ajax-loader {
+	display: none;
+}
+input[type="submit"] {
+	font-size: 20px;
+	color: #fff;
+	background: #37D59C !important;
+	padding: 10px 30px;
+}
+.contact-us-form input, .contact-us-form textarea, .contact-us-form select {
+	background: #E8E8E8;
+}
+/*Category*/
+.category .page-title h1, .category .page-title h3, .single-post .page-title h1, .single-post .page-title h3 {
+	color: #fff;
+}
+.category .page-title h1, .single-post .page-title h1 {
+	border-bottom: 2px solid #fff;
+}
+.archive-single-info {
+	position: relative;
+	margin-bottom: 15px;
+}
+.archive-single-info .post-date {
+	color: #fff;
+	position: absolute;
+	left: 0;
+	top: 0;
+	padding: 2px 7px;
+	font-size: 12px;
+	background: #000;
+}
+.post-list-wrapper h5 {
+	margin-bottom: 15px;
+}
+.post-list-wrapper h5 a {
+	color: #666666;
+	font-size: 13px;
+	display: inline-block;
+	line-height: 1.6em;
+}
+.post-list-wrapper h5 a:hover {
+	color: #37D59C;
+}
+.post-list-wrapper article {
+	margin-bottom: 45px;
+	border-bottom: 1px solid #eee;
+	padding-bottom: 20px;
+	padding-top:20px;
+}
+.post-list-wrapper article:hover{
+	-webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.25);
+	-moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.25);
+	box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.25);
+}
+.custom-button.read-more {
+	background: #37D59C;
+}
+.custom-button.read-more a {
+	background: url("images/read-more-icon.png")/*tpa=http://www.mrkgym.com/wp-content/themes/mrk/images/read-more-icon.png*/ no-repeat right center;
+	color: #fff;
+	padding: 10px 15px 10px 20px;
+	font-weight: bold;
+	margin-right: 15px;
+}
+.custom-button.read-more:hover{
+	background: #333;
+}
+/*Page navi*/
+.wp-pagenavi > a, .wp-pagenavi > span {
+	background-color: #000;
+	border: none;
+	color: #fff;
+	line-height: 29px;
+	font-size: 15px;
+	margin-right: 15px;
+	padding: 8px 15px;
+}
+.wp-pagenavi > a:hover {
+	background-color: #37D59C;
+}
+.wp-pagenavi > span.current {
+	background-color: #37D59C;
+}
+.wp-pagenavi .previouspostslink {
+	background-image: url("images/pagenavi-prev.png")/*tpa=http://www.mrkgym.com/wp-content/themes/mrk/images/pagenavi-prev.png*/;
+	background-position: center center;
+	background-repeat: no-repeat;
+	color: rgba(255, 255, 255, 0);
+	text-indent: 10em;
+}
+.wp-pagenavi .nextpostslink {
+	background-image: url("images/pagenavi-next.png")/*tpa=http://www.mrkgym.com/wp-content/themes/mrk/images/pagenavi-next.png*/;
+	background-position: center center;
+	background-repeat: no-repeat;
+	color: rgba(255, 255, 255, 0);
+	text-indent: 10em;
+}
+/*Single Post*/
+.single-post article h4.post-title {
+	margin-bottom: 20px;
+}
+.single-post-content {
+	border-top: 1px solid #EEEEEE;
+	padding-top: 40px;
+	margin-top: 25px;
+}
+.single-post article .single-post-wrapper {
+	margin-left: 10px;
+}
+.single-post article .post-date {
+	padding: 2px 7px;
+	font-size: 12px;
+	background: #000;
+	color: #fff;
+}
+/*flexslider*/
+.flex-direction-nav .flex-prev, .flex-direction-nav .flex-next {
+	display: none;
+}
+.flexslider:hover .flex-direction-nav .flex-prev, .flexslider:hover .flex-direction-nav .flex-next {
+	display: block;
+}
+#slider.flexslider .flex-direction-nav .flex-prev, #slider.flexslider .flex-direction-nav .flex-next {
+	background: rgba(0, 0, 0, 0.6);
+	width: 60px;
+	height: 60px;
+}
+.flexslider .flex-direction-nav .flex-prev {
+	left: 0;
+}
+.flexslider .flex-direction-nav .flex-next {
+	right: 0;
+}
+#slider.flexslider .flex-direction-nav .flex-prev:before {
+	content: url("images/flex-prev.png")/*tpa=http://www.mrkgym.com/wp-content/themes/mrk/images/flex-prev.png*/;
+	margin-left: 19px;
+	margin-top: 9px;
+}
+#slider.flexslider .flex-direction-nav .flex-next:before {
+	content: url("images/flex-next.png")/*tpa=http://www.mrkgym.com/wp-content/themes/mrk/images/flex-next.png*/;
+	margin-right: 19px;
+	margin-top: 9px;
+}
+#carousel.flexslider .flex-direction-nav .flex-prev, #carousel.flexslider .flex-direction-nav .flex-next {
+	background: rgba(0, 0, 0, 0.6);
+	width: 17px;
+	height: 57px;
+}
+#carousel.flexslider .flex-direction-nav .flex-prev:before {
+	content: url("images/flex-prev-02.png")/*tpa=http://www.mrkgym.com/wp-content/themes/mrk/images/flex-prev-02.png*/;
+	margin-left: 4px;
+}
+#carousel.flexslider .flex-direction-nav .flex-next:before {
+	content: url("images/flex-next-02.png")/*tpa=http://www.mrkgym.com/wp-content/themes/mrk/images/flex-next-02.png*/;
+	margin-right: 4px;
+}
+.flex-direction-nav a {
+	margin-top: -28px;
+}
+/*Responsive*/. @media (min-width: 900px) and (max-width: 1200px) {
+ ul#menu-primary-menu > li {
+ margin-right: 20px;
+}
+}
+@media (min-width: 770px) and (max-width: 1200px) {
+.center-single-wrapper {
+	float: left;
+}
+}
+@media (min-width: 900px) {
+ul#menu-primary-menu {
+	width: 100%;
+	text-align: center;
+	float: none;
+}
+ul#menu-primary-menu > li {
+	float: none;
+	display: inline-block;
+}
+}
+@media (max-width: 900px) {
+.logo img {
+	padding: 20px 15px;
+}
+ul#menu-primary-menu > li {
+	margin-right:0;
+	margin-left:0;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.6);
+}
+ ul#menu-primary-menu > li;
+last-child {
+	border-bottom: none;
+}
+.nav ul {
+	width: 100%;
+}
+.nav > li > .parent,  .nav > li:hover > .parent {
+	background: url("images/downArrow.png")/*tpa=http://www.mrkgym.com/wp-content/themes/mrk/images/downArrow.png*/ no-repeat 95% 50% !important;
+}
+nav {
+	background: #eee;
+}
+.home-guide-section {
+	top: 0;
+	margin-top: 50px;
+}
+.home-guide-section ul li {
+	width: 100%;
+	text-align: center;
+	margin-bottom: 20px;
+}
+.home-guide-section ul li .guide-content {
+	text-align: left;
+}
+.tp-bullets.simplebullets.custom {
+	bottom: 20px !important;
+}
+.footer-widget-right ul li {
+	width: 50%;
+}
+.footer-widget-right ul li:nth-child(3n+1) {
+	margin-left: 0;
+}
+.center-left-top {
+	margin-top: 30px;
+}
+.header-bar {
+	display: none;
+}
+}
+@media (max-width: 770px) {
+.custom-left,  .custom-right {
+	float: none;
+	width: 100%;
+}
+.nav > li > a {
+	padding-top: 10px !important;
+}
+.nav-container {
+	padding-bottom: 0;
+	margin-bottom: 0;
+}
+.center-left-bottom {
+	margin-bottom: 40px;
+}
+.center-left-bottom h4 {
+	text-align: center;
+}
+.center-single-wrapper {
+	width: 100%;
+	margin-bottom: 20px;
+	text-align: center;
+}
+.center-single-wrapper .center-single-content {
+	display: inline-block;
+}
+.mrk-bg-section-left {
+	margin-bottom: 40px;
+}
+.mrk-bg-section-left img, .mrk-bg-section-right img {
+	display: block;
+	margin: 0 auto;
+}
+.contact-info li {
+	width: 100%;
+	display: block;
+	margin-bottom: 40px;
+}
+.contact-info li.position-info {
+	max-width: inherit;
+}
+.sidebar-content-wrapper {
+	margin-left: 0;
+}
+#footer-widgets-top {
+	padding: 30px 0;
+}
+.footer-widget-left {
+	margin-bottom: 40px;
+}
+.mrk-intro-section-right {
+	margin: 0 auto;
+}
+}
+ @media (max-width: 420px) {
+.footer-widget-right ul li {
+	width: 100%;
+}
+.home-guide-section ul li .guide-content-wrapper,  .center-single-wrapper .center-single-content {
+	display: block;
+}
+.post-list-wrapper article {
+	width: 100%;
+	margin-right: 0;
+	float: none;
+}
+.header-bar .custom-right span {
+	display: block;
+}
+.gray-line h4 > span {
+	display: block;
+	margin: 0 !important;
+}
+}
+.home-video video {
+	max-width: 570px;
+	width: 100%;
+	height: auto;
+}
+.featured > li {
+	padding: 0;
+}
+.header-bar{
+	padding-top:10px;
+	padding-bottom:10px;
+}
+.no-border-padding .table > thead > tr > th,
+.no-border-padding .table > tbody > tr > th,
+.no-border-padding .table > tfoot > tr > th,
+.no-border-padding .table > thead > tr > td,
+.no-border-padding .table > tbody > tr > td,
+.no-border-padding .table > tfoot > tr > td{
+	border-top:0;
+	border-bottom:0;
+	padding:0;
+}
+.kebiao-table table th,
+.kebiao-table table tr,
+.kebiao-table table td{
+	text-align: center;
+	vertical-align: middle !important;
+	font-size: 12px;
+}
+.kebiao-table table th{
+	background: #eee;
+	border-bottom: 1px solid #fff;
+	border-top:  none !important;
+}
+.kebiao-table table tr:first-child th{
+	background: #D1F5E9;
+	color: #000;
+	font-size: 14px;
+	padding: 15px 8px;
+	border-bottom: 1px solid #37d49b;
+}
+.kebiao-table table tr:last-child th,
+.kebiao-table table tr:last-child td{
+	border-bottom: 1px solid #37d49b;
+}
+.kebiao-table table img{
+	max-width: 95px !important;
+}
+.kecheng_intro_single{
+	padding-bottom: 30px;
+	margin-bottom: 40px;
+	border-bottom: 1px solid #ddd;
+}
+.kecheng_intro_single img{
+	padding-bottom: 10px;
+}
+.kecheng_intro_single:last-child{
+	padding-bottom: 0;
+	margin-bottom: 0;
+	border-bottom: 0px solid #ddd;
+}
+.kecheng_intro_single .kecheng-name{
+	font-size: 16px;
+	line-height: 1.6em;
+	margin-bottom: 15px;
+}
+video{
+	max-width: 100%;
+}
+.additonal_action_video,
+.additonal_action_slider{
+	margin-bottom: 30px;
+}
+.page-title-inner h1.color-default,
+.page-title-inner h3.color-default{
+	color: #333;
+}
+.page-title-inner h1.color-white,
+.page-title-inner h3.color-white{
+	color: #fff;
+}
+.page-title-inner h1.color-white{
+	border-bottom:2px solid #fff;
+}
+.proteam-content{
+	margin-top: 30px;
+}
+.proteam-content h3{
+	margin-bottom: 20px;
+}
+.proteam-content ul{
+	padding-left: 0;
+	list-style-position: inside;
+}
+.proteam-content ul ul{
+	padding-left: 20px;
+}
+.embed-responsive-custom-size{
+    padding-bottom: 61%;
+}
+.flexslider .slides img{
+	width: auto;
+	display: inline-block;
+}
+.flexslider .slides > li{
+	text-align: center;
+}
+.flex-control-nav{
+	display: none;
+}
